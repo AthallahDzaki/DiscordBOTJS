@@ -1,0 +1,27 @@
+{
+  "name": "discordbotjs",
+  "version": "1.0.0",
+  "description": "Just My Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AthallahDzaki/DiscordBOTJS.git"
+  },
+  "keywords": [
+    "DiscordJS",
+    "Discord",
+    "BOT",
+    "Discord",
+    "BOT",
+    "DJS"
+  ],
+  "author": "AthallahDzaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AthallahDzaki/DiscordBOTJS/issues"
+  },
+  "homepage": "https://github.com/AthallahDzaki/DiscordBOTJS#readme"
+}
