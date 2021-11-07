@@ -2,18 +2,22 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
     option : {
-        status : false
-    },
+        status : false, // True = Option Is Used On index.js, False = Will Ignore Option
+        name : "NameOfOption",
+        description: "Description Of Option",
+        required : false // False = Not Required, True = Required
+    }, // Option is for .addOptions
 	data: new SlashCommandBuilder()
 		.setName('ping')
-		.setDescription('Replies with Server Status!')
+		.setDescription('Replies with Server Status!'),
+        /*
         .addStringOption(option =>
-            option.setName("test")
-              .setDescription("Some argument")
+            option.setName(option.name)
+              .setDescription(option.description)
               .setRequired(option.required)
               .addChoice("Arg A", "A")
               .addChoice("Arg B", "B")
-          ),
+          )*/
 	async execute(client, message, args, interaction = false) {
         if(interaction) {
             await client.deferReply();
